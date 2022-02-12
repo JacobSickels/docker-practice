@@ -31,3 +31,13 @@ services:
       - POSTGRES_DB=prisma
       - DATABASE_URL=postgres://jacob:password@postgres:5432/prisma?schema=prisma
     command: npm run dev
+
+  web:
+    build:
+      dockerfile: Dockerfile
+      context: ./web
+    ports:
+      - 3000:3000
+    volumes:
+      - /app/node_modules
+      - ./web:/app
