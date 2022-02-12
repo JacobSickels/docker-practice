@@ -1,0 +1,12 @@
+{
+  "name": "docker-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dc:up": "docker-compose up -d",
+    "dc:down": "docker-compose down --rmi all"
+  },
+  "author": "jacobsickels",
+  "license": "ISC"
+}
